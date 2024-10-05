@@ -1,0 +1,62 @@
+Tableau Download & Installation
+
+In case you have not installed tableau, please check the below instructions
+*Download Links*
+
+*Mac* - https://www.tableau.com/en-us/downloads/public/mac
+
+*Windows* - https://www.tableau.com/en-us/downloads/public/pc64
+
+After you download,
+ _- Open the file_
+ _- Accept the terms & conditions_
+ _- Click on install_
+
+Raw Dataset
+
+https://drive.google.com/uc?export=download&id=1EnGhqtPTxTFJd60ioVcBHOpHSQPAP8WR
+
+Chatgpt
+
+https://chatgpt.com/
+
+Prompt 1
+
+Create an excel formula to give values "Delay" if the difference of dates in cell c2 and b2 in days is greater than 4 otherwise the value should be "On time"
+
+Solution 1
+
+=IF(C2-B2>4, "Delay", "On time")
+
+Prompt 2
+
+write an excel formula to extract name from email id in f2 with @ as a seperator 
+
+Solution 2
+
+=LEFT(F2, FIND("@", F2)-1)
+
+
+
+Prompt 3
+
+I have comma separated values in G2, Write 3 excel formula to extract the values as comma as a separator in H2, I2 and J2 
+
+H2
+
+=TRIM(MID(SUBSTITUTE(G2, ",", REPT(" ", 100)), 1, 100))
+
+I2
+
+=TRIM(MID(SUBSTITUTE(G2, ",", REPT(" ", 100)), 101, 100))
+
+J2
+
+=TRIM(MID(SUBSTITUTE(G2, ",", REPT(" ", 100)), 201, 100))
+
+
+Final Dataset
+
+https://drive.google.com/uc?export=download&id=1Fypty-6maIEB4rrZRMnWEaC2_P4ZswvS
+
+
